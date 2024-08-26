@@ -1,0 +1,219 @@
+.container {
+  min-height: 570px;
+  background-color: #181818;
+  padding: 30px 80px;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  justify-self: center;
+  overflow: hidden;
+}
+
+.contentContainer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.cardsContainer {
+  column-gap: 20px;
+  display: flex;
+}
+
+.reparationsCard,
+.garantiaCard,
+.horarioCard {
+  background-color: #1f1f1f;
+  border: 1px solid #fde297;
+  overflow: hidden;
+  transition: scale 0.4s ease;
+  z-index: 2;
+  position: relative;
+}
+
+.reparationsCard {
+  border-radius: 7px;
+  backdrop-filter: blur(20px);
+  color: #fff;
+  max-width: 800px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+
+  animation: reparation-reveal ease both;
+  animation-timeline: scroll(root block);
+  animation-range: 1300px 1600px;
+}
+
+.reparationsCard .reparatinsCardContent {
+  height: fit-content;
+}
+
+.reparationsCard img {
+  width: 320px;
+  height: 100%;
+  object-fit: cover;
+}
+
+.reparationsCard .cardsContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reparationsCard .cardText {
+  height: fit-content;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 20px;
+}
+
+.reparationsCard .cardText p {
+  font-family: "Montserrat Regular", "Lucida Sans";
+  color: #fffffe;
+  font-size: 1.1rem;
+  text-wrap: balance;
+}
+
+.reparationsCard .cardTitle {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 1.7rem;
+  color: #fde297;
+  background-color: #151515;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.otherCards {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 20px;
+
+  animation: other-reveal ease both;
+  animation-timeline: scroll(root block);
+  animation-range: 1300px 1600px;
+}
+
+.garantiaCard {
+  width: 370px;
+  height: 270px;
+  border-radius: 10px;
+  /* background-color: #1f1f1f; */
+  backdrop-filter: blur(20px);
+}
+
+.garantiaCard .garantiaTitle {
+  background-color: #151515;
+  display: flex;
+  padding: 18px;
+  color: #fde297;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  align-items: center;
+  column-gap: 10px;
+  box-sizing: border-box;
+}
+
+.garantiaCard .garantiaText {
+  display: flex;
+  align-content: c;
+  font-family: "Montserrat Regular", "Lucida Sans";
+  font-size: 1rem;
+  color: #fffffe;
+  height: 100%;
+  padding: 20px;
+  text-wrap: pretty;
+}
+
+.horarioCard {
+  width: 370px;
+  height: 180px;
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.horarioCard .horarioTitle {
+  background-color: #151515;
+  display: flex;
+  padding: 18px;
+  color: #fde297;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  align-items: center;
+  column-gap: 10px;
+  box-sizing: border-box;
+}
+
+.horarioCard .horarioText {
+  font-family: "Montserrat Regular", "Lucida Sans";
+  font-size: 1rem;
+  color: #fffffe;
+  height: 100%;
+  padding: 20px;
+}
+
+@keyframes reparation-reveal {
+  0% {
+    opacity: 0.2;
+    transform: translateX(-70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes other-reveal {
+  0% {
+    opacity: 0.2;
+    transform: translateX(70px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 30px 15px;
+  }
+  .cardsContainer {
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 30px;
+  }
+
+  .reparatinsCardContent {
+    width: fit-content;
+  }
+  .reparationsCard img {
+    display: none;
+  }
+
+  .reparationsCard .cardTitle h3 {
+    font-size: 1.3rem;
+  }
+
+  .reparationsCard .cardText p,
+  .garantiaCard p,
+  .horarioCard p {
+    font-size: 1rem;
+  }
+
+  .garantiaCard,
+  .horarioCard {
+    width: 100%;
+    height: fit-content;
+  }
+
+  .otherCards {
+    row-gap: 30px;
+    height: initial;
+    justify-content: space-evenly;
+  }
+}

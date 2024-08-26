@@ -1,0 +1,123 @@
+.container {
+  width: 100%;
+  height: 100vh;
+  background-color: #000000be;
+  position: fixed;
+  top: 0;
+  z-index: 9999999999999999999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 15px;
+}
+
+.container * {
+  margin: 0;
+  padding: 0;
+}
+
+.container .form {
+  background-image: radial-gradient(#222, #111);
+  z-index: 40;
+  padding: 30px 30px 0 30px;
+  border-radius: 15px;
+}
+
+.title {
+  font-family: "HeadlandOne Regular";
+  color: #9e9e9e;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.title button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #e97c7c;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: #db4d4d;
+  }
+
+  &:active {
+    color: #df3434;
+  }
+}
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 700px;
+  gap: 30px;
+}
+
+.controls label {
+  display: flex;
+  flex-direction: column;
+  font-family: "Montserrat Regular";
+  color: #f0f8ffd5;
+}
+
+.controls input {
+  padding: 9px 12px 9px 3px;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #9e9e9e;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #dbdbdb;
+  font-size: 1rem;
+}
+
+.controls textarea {
+  margin-top: 10px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #dbdbdb;
+  background-color: #222c;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.controls label:nth-child(5),
+.controls label:nth-child(6) {
+  grid-column: 1 / span 2;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  column-gap: 20px;
+  margin: 12px;
+}
+
+.buttons button:first-child,
+.buttons button:last-child {
+  padding: 10px 16px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 5px;
+}
+
+.buttons button:first-of-type {
+  background-color: #797979;
+  color: #fff;
+}
+
+.buttons button:last-child {
+  background-color: #429442;
+  color: #fff;
+}

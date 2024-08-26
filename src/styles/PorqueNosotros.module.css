@@ -1,0 +1,159 @@
+.container {
+  min-height: 590px;
+  width: 100%;
+  background-color: #272727;
+  padding: 40px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
+.title {
+  text-align: center;
+}
+
+.title h2 {
+  font-family: "Montserrat Regular", "Lucida Sans";
+  color: #f3c138;
+  font-size: 2.8rem;
+}
+
+.title p {
+  font-family: "Montserrat Regular", "Lucida Sans";
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.boxes {
+  width: 900px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.boxes div {
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  padding: 20px;
+}
+
+.boxes div p {
+  font-family: "OpenSans Regular", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 1.05rem;
+  text-wrap: pretty;
+}
+
+div img {
+  width: 100px;
+}
+
+.boxes div:first-child,
+.boxes div:last-child {
+  background-color: #202020;
+}
+
+.boxes div:first-child {
+  border-top-left-radius: 30px;
+}
+.boxes div:last-child {
+  border-bottom-right-radius: 30px;
+}
+
+.boxes :nth-child(1),
+.boxes :nth-child(3) {
+  text-align: right;
+}
+
+.text {
+  font-family: "OpenSans Regular", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 0 280px;
+  text-align: center;
+  box-sizing: border-box;
+  text-wrap: pretty;
+}
+
+.text span {
+  color: #f3c138;
+}
+
+.title {
+  animation: data-reveal ease both;
+  animation-timeline: scroll(root block);
+  animation-range: 1600px 2300px;
+}
+.boxes,
+.text {
+  animation: data-reveal ease both;
+  animation-timeline: scroll(root block);
+  animation-range: 1900px 2300px;
+}
+
+@keyframes data-reveal {
+  0% {
+    opacity: 0.2;
+    scale: 0.8;
+    transform: translateY(-50px);
+  }
+  90% {
+    scale: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    row-gap: 30px;
+  }
+
+  .title h2 {
+    font-size: 1.9rem;
+  }
+  .boxes {
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .boxes div {
+    border-radius: 0;
+    flex-direction: column;
+  }
+
+  .boxes div:first-child {
+    border-top-left-radius: 0;
+  }
+  .boxes div:last-child {
+    border-bottom-right-radius: 0;
+  }
+
+  .boxes div p,
+  .boxes :nth-child(1),
+  .boxes :nth-child(3) {
+    text-align: center;
+  }
+
+  .boxes div:nth-child(odd) {
+    flex-direction: column-reverse;
+  }
+
+  .text {
+    font-size: 1rem;
+    padding: 0;
+  }
+}

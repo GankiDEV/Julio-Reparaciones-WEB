@@ -1,0 +1,118 @@
+.container {
+  box-sizing: border-box;
+  min-height: 570px;
+  background-color: #272727;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.textInfo {
+  color: #fff;
+  font-family: "Montserrat Regular", "Lucida Sans";
+
+  animation: data-reveal ease both;
+  animation-timeline: scroll(root block);
+  animation-range: 700px 1300px;
+}
+
+.textInfo h2 {
+  font-family: "Montserrat Regular", "Lucida Sans";
+  font-size: 3rem;
+  color: #f3c138;
+}
+
+.textInfo p {
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+.dataContainer {
+  color: #fff;
+  display: flex;
+  font-family: "OpenSans Regular", Arial, Helvetica, sans-serif;
+  border: 1px solid #ccc;
+  margin: 30px 0;
+
+  animation: data-reveal ease both;
+  animation-timeline: scroll(root block);
+  animation-range: 700px 1300px;
+}
+
+.dataContainer div {
+  border: 1px solid #ccc;
+  width: 200px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dataContainer div p:nth-child(2) {
+  font-size: 3rem;
+}
+.dataContainer div p:nth-child(3) {
+  font-size: 1.2rem;
+}
+
+.description {
+  font-family: "OpenSans Regular", Arial, Helvetica, sans-serif;
+  color: #fff;
+  font-size: 1.1rem;
+  max-width: 700px;
+  text-align: center;
+
+  animation: data-reveal ease both;
+  animation-timeline: scroll(root block);
+  animation-range: 700px 1300px;
+}
+
+.description span {
+  color: #f3c138;
+}
+
+@keyframes data-reveal {
+  0% {
+    opacity: 0.6;
+    scale: 0.8;
+    transform: translateY(-50px);
+  }
+  90% {
+    scale: 1;
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 40px;
+  }
+  .container h2 {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .dataContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+
+  .dataContainer div {
+    width: 130px;
+    height: 130px;
+  }
+
+  .dataContainer div p:nth-child(2) {
+    font-size: 1.9rem;
+  }
+  .dataContainer div p:nth-child(3) {
+    font-size: 0.9rem;
+  }
+}

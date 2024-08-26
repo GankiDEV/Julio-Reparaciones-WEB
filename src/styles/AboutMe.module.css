@@ -1,0 +1,86 @@
+.container {
+  background-color: #181818;
+  min-height: 570px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 0 100px;
+  column-gap: 60px;
+}
+
+.container img {
+  width: 340px;
+  border-radius: 50%;
+  outline: 10px solid #f3c138;
+  box-shadow: 0 0 60px #000f;
+  transition: scale 0.3s ease;
+
+  animation: image-reveal linear alternate both;
+  animation-timeline: scroll(root block);
+  animation-range: 0px 450px;
+}
+
+.biography {
+  color: #fff;
+
+  animation: section-reveal ease both;
+  animation-timeline: scroll(root block);
+  animation-range: 0px 650px;
+}
+
+.biography h2 {
+  color: #f3c138;
+  font-family: "Montserrat Regular", "Lucida Sans";
+  font-size: 3.2rem;
+  margin-bottom: 30px;
+}
+
+.biography p {
+  padding: 5px 0;
+  font-family: "OpenSans Regular", Arial, Helvetica, sans-serif;
+  font-weight: lighter;
+  font-size: 1.2rem;
+}
+
+@keyframes section-reveal {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes image-reveal {
+  from {
+    transform: translateX(300px);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    padding: 40px 20px;
+    flex-direction: column-reverse;
+  }
+
+  .container img {
+    width: 200px;
+    margin: 50px 0;
+  }
+
+  .biography h2 {
+    font-size: 2rem;
+  }
+  .biography p {
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,72 @@
+:root {
+  font-size: 16px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  box-sizing: border-box;
+  width: 100%;
+  background-color: #000c;
+  justify-content: start;
+  padding: 0 80px;
+  overflow: hidden;
+}
+
+.textInfo {
+  color: #fff;
+  font-family: "Montserrat Regular", Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  border-left: 5px solid #f3c138;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.textInfo h1 {
+  font-family: "OpenSans Regular", Arial, Helvetica, sans-serif;
+  color: #f3c138;
+  font-size: 2.8rem;
+}
+
+.textInfo h2 {
+  font-size: 3rem;
+}
+
+.textInfo :last-child {
+  font-size: 2.8rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.textInfo h2 span {
+  color: #f3c138;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    height: 500px;
+    width: 100%;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .textInfo {
+    width: fit-content;
+    text-align: center;
+    border: none;
+  }
+
+  .textInfo h1 {
+    margin-bottom: 30px;
+    font-size: 1.6rem;
+  }
+
+  .textInfo h2 {
+    font-size: 1.6rem;
+  }
+
+  .textInfo :nth-child(3),
+  .textInfo :nth-child(3) span {
+    font-size: 1.6rem;
+  }
+}
