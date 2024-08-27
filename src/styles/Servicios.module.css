@@ -66,6 +66,7 @@
   justify-content: center;
   flex-direction: column;
   padding: 20px;
+  gap: 20px;
 }
 
 .reparationsCard .cardText p {
@@ -84,6 +85,19 @@
   display: flex;
   align-items: center;
   column-gap: 15px;
+}
+
+.reparationsCard .cardText ul {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  list-style: none;
+  margin-left: 10px;
+}
+
+.reparationsCard .cardText ul li {
+  display: flex;
+  gap: 10px;
 }
 
 .otherCards {

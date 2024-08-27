@@ -1,7 +1,8 @@
 .container {
   box-sizing: border-box;
   min-height: 570px;
-  background-color: #272727;
+  /* background-color: #272727; */
+  background-image: linear-gradient(45deg, #222, #333);
   display: flex;
   flex-direction: column;
   justify-content: center;

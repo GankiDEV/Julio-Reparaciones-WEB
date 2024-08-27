@@ -68,6 +68,10 @@ div img {
   text-align: right;
 }
 
+.boxes :nth-child(3) {
+  justify-content: right;
+}
+
 .text {
   font-family: "OpenSans Regular", Arial, Helvetica, sans-serif;
   color: #fff;

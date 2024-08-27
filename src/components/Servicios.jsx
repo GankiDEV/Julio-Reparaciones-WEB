@@ -1,7 +1,12 @@
 import style from "@/styles/Servicios.module.css";
 import img from "@/assets/cardImage.jpg";
 
-import { FaPencilRuler, FaHandsHelping, FaCalendarCheck } from "react-icons/fa";
+import {
+  FaPencilRuler,
+  FaHandsHelping,
+  FaCalendarCheck,
+  FaCheckCircle,
+} from "react-icons/fa";
 
 const {
   container,
@@ -32,16 +37,45 @@ function Servicios() {
               <div className={style.cardText}>
                 <p>
                   Le devolvemos la vida a todo tipo de electromésticos
-                  multimarcas, entre los principales que reparamos están las
-                  lavadoras, secadoras, lavavajillas, aires acondicionados,
-                  microondas, hornos, estufas de gas, y pequeños equipos como
-                  batidoras, cafeteras y licuadoras.
+                  multimarcas:
                 </p>
+                <ul className={style.repairList}>
+                  <li>
+                    <FaCheckCircle color="#4e8" fontSize={"1.2rem"} />
+                    <p>Aires Acondicionados</p>
+                  </li>
+                  <li>
+                    <FaCheckCircle color="#4e8" fontSize={"1.2rem"} s />
+                    <p>Secadoras</p>
+                  </li>
+                  <li>
+                    <FaCheckCircle color="#4e8" fontSize={"1.2rem"} s />
+                    <p>Lavadoras</p>
+                  </li>
+                  <li>
+                    <FaCheckCircle color="#4e8" fontSize={"1.2rem"} s />
+                    <p>Microondas</p>
+                  </li>
+                  <li>
+                    <FaCheckCircle color="#4e8" fontSize={"1.2rem"} s />
+                    <p>Hornos</p>
+                  </li>
+                  <li>
+                    <FaCheckCircle color="#4e8" fontSize={"1.2rem"} s />
+                    <p>Lavavajillas</p>
+                  </li>
+                  <li>
+                    <FaCheckCircle color="#4e8" fontSize={"1.2rem"} s />
+                    <p>Estufas (de gas)</p>
+                  </li>
+                  <li>
+                    <FaCheckCircle color="#4e8" fontSize={"1.2rem"} s />
+                    <p>Cafeteras, Batioras etc...</p>
+                  </li>
+                </ul>
                 <p>
-                  Seguimos los más altos estándares de calidad en nuestras
-                  reparaciones, para asegurar una reparacion eficiente y
-                  duradera. Nuestra prioridad es brindar soluciones confiables y
-                  superar las expectativas de nuestros clientes
+                  Nuestra prioridad es brindar soluciones confiables y superar
+                  las expectativas de nuestros clientes.
                 </p>
               </div>
             </div>

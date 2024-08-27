@@ -1,17 +1,51 @@
 @import url("@/styles/fonts/regular.css");
 
+html,
 body {
   background-color: #333;
   margin: 0;
   padding: 0;
   position: relative;
-
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: #1b1b1b #9b9b9b;
   background-image: url("@/assets/fondoPresentation.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   position: relative;
   overflow-x: hidden;
+}
+
+.contactFormVisible {
+  display: flex;
+  animation: contactFromReveal 1s ease;
+}
+
+.contactFormNotVisible {
+  animation: contactFormUnreveal 1s ease both;
+}
+
+@keyframes contactFromReveal {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+
+@keyframes contactFormUnreveal {
+  0% {
+    display: flex;
+    scale: 1;
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    scale: 0;
+    display: none;
+  }
 }
 
 @media only screen and (max-width: 600px) {

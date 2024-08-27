@@ -85,6 +85,7 @@ function NavBar({ showForm }) {
             <a
               onClick={() => {
                 setMenuToggled(false);
+                showForm(true);
               }}
               className={style.mobileContactMe}
             >

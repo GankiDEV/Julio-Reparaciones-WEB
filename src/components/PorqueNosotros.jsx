@@ -21,41 +21,29 @@ function PorqueNosotros() {
 
       <div className={style.boxes}>
         <div>
-          <p>
-            Contamos con una larga experiencia la cual se ve aplicada en todas
-            las operaciones realizadas.
-          </p>
+          <p>Contamos con equipamento de calidad</p>
           <img src={img3} alt="experiencia laboral" />
         </div>
 
         <div>
           <img src={img2} alt="viaje a domicilio" />
-          <p>
-            No te preocupes, nosotros nos encargamos de llegar a ti, y lo mejor,
-            ¡sin costos adicionales!
-          </p>
+          <p>Sin pago por desplazamiento</p>
         </div>
 
         <div>
-          <p>
-            Damos asistencia técnica en caso de que algun equipo haya fallado en
-            su reparación al marcharnos.
-          </p>
+          <p>Servicio abierto las 24 horas</p>
           <img src={img1} alt="atencion al cliente" />
         </div>
 
         <div>
           <img src={img4} alt="bolsa de dinero" />
-          <p>
-            Los mejores precios al márgen de un excelente servicio, nada de
-            exageraciones
-          </p>
+          <p>Sin preciones exagerados, todo como se debe</p>
         </div>
       </div>
 
       <p className={style.text}>
         No te <span>arrepentiras</span> de trabajar con nosotros,{" "}
-        <span>carisma</span>,<span>dedicación</span>, <span>compromiso</span> y
+        <span>carisma</span>, <span>dedicación</span>, <span>compromiso</span> y{" "}
         <span>honestidad</span> es lo que nos caracteriza como trabajadores,
         contáctanos y dejanos entrar en acción.
       </p>
