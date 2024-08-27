@@ -66,10 +66,6 @@ function Servicios() {
                   </li>
                   <li>
                     <FaCheckCircle color="#4e8" fontSize={"1.2rem"} s />
-                    <p>Estufas (de gas)</p>
-                  </li>
-                  <li>
-                    <FaCheckCircle color="#4e8" fontSize={"1.2rem"} s />
                     <p>Cafeteras, Batioras etc...</p>
                   </li>
                 </ul>
