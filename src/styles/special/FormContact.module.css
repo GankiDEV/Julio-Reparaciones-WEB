@@ -24,6 +24,7 @@
   max-width: 700px;
   border: 5px solid #353535;
   box-shadow: 0 0 370px 100px #000;
+  position: relative;
 }
 
 .title {
@@ -56,8 +57,12 @@
   width: 700px;
   gap: 20px;
   column-gap: 10px;
+  position: relative;
 }
 
+.controls.controlsHide {
+  opacity: 0;
+}
 .controls label {
   display: flex;
   flex-direction: column;
@@ -135,13 +140,19 @@
   column-gap: 5px;
 }
 
-.buttons button:first-of-type {
-  background-color: #797979;
+.buttons button:first-child {
+  background-color: #429442;
   color: #fff;
 
   &:hover {
-    background-color: #636363;
+    background-color: #368136;
     cursor: pointer;
+  }
+
+  &:disabled {
+    cursor: initial;
+    background-color: #797979;
+    color: #fff;
   }
 }
 
@@ -152,6 +163,32 @@
   &:hover {
     background-color: #368136;
     cursor: pointer;
+  }
+}
+
+.emailStatus {
+  padding: 200px;
+  background-color: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 1;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-family: "OpenSans Regular";
+  color: #dbdbdb;
+}
+
+.loading {
+  animation: loading 1s linear infinite;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotateZ(360deg);
   }
 }
 

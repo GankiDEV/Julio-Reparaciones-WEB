@@ -16,7 +16,7 @@ function PorqueNosotros() {
     <section id="porquenosotros" className={style.container}>
       <div className={style.title}>
         <h2>No encontrarás mejor servicio.</h2>
-        <p>Nuestro servicio de reparaciones no paran de mejorar.</p>
+        <p>No paramos de mejorar.</p>
       </div>
 
       <div className={style.boxes}>
