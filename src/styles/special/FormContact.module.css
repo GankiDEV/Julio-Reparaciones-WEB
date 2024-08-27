@@ -157,7 +157,7 @@
 
 @media screen and (max-width: 600px) {
   .container .form {
-    width: 240px;
+    width: 220px;
     width: fit-content;
     height: fit-content;
     padding: 20px 20px 0 20px;
