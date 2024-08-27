@@ -68,6 +68,7 @@
 
 @media only screen and (max-width: 600px) {
   .container {
+    height: 100vh;
     padding: 40px 20px;
     flex-direction: column-reverse;
   }
