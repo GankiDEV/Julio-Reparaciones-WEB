@@ -157,14 +157,15 @@
 
 @media screen and (max-width: 600px) {
   .container .form {
-    width: 260px;
+    width: 240px;
     width: fit-content;
     height: fit-content;
     padding: 20px 20px 0 20px;
   }
 
   .controls {
-    display: grid;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     width: 100%;
     height: fit-content;

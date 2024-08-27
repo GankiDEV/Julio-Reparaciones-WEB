@@ -34,7 +34,7 @@ function FormContact({ isVisible, setVisible }) {
       <form className={style.form} ref={form} onSubmit={sendEmail}>
         <div className={style.title}>
           <h2>Contactanos</h2>
-          <button onClick={() => setVisible(false)}>
+          <button onClick={(e) => {e.preventDefault(); setVisible(false)}}>
             <FaCircleXmark
               fontSize={"2.5rem"}
               className={style.closeButton}

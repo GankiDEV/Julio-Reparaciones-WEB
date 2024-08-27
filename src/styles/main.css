@@ -19,18 +19,20 @@ body {
 
 .contactFormVisible {
   display: flex;
-  animation: contactFromReveal 1s ease;
+  animation: contactFromReveal 0.8s ease;
 }
 
 .contactFormNotVisible {
-  animation: contactFormUnreveal 1s ease both;
+  animation: contactFormUnreveal 0.8s ease both;
 }
 
 @keyframes contactFromReveal {
   0% {
-    scale: 0;
+    scale: 0.5;
+    opacity: 0;
   }
   100% {
+    opacity: 1;
     scale: 1;
   }
 }
@@ -43,7 +45,7 @@ body {
   }
   100% {
     opacity: 0;
-    scale: 0;
+    scale: 0.5;
     display: none;
   }
 }
