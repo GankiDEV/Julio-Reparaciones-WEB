@@ -44,7 +44,7 @@
 
 @media only screen and (max-width: 600px) {
   .container {
-    height: 500px;
+    height: 100vhpx;
     width: 100%;
     padding: 0;
     justify-content: center;
