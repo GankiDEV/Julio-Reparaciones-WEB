@@ -8,7 +8,7 @@ body {
   position: relative;
   scroll-behavior: smooth;
   scrollbar-width: thin;
-  scrollbar-color: #1b1b1b #9b9b9b;
+  scrollbar-color: #1b1b1b #5e5e5e;
   background-image: url("@/assets/fondoPresentation.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -19,11 +19,11 @@ body {
 
 .contactFormVisible {
   display: flex;
-  animation: contactFromReveal 0.8s ease;
+  animation: contactFromReveal 0.4s ease;
 }
 
 .contactFormNotVisible {
-  animation: contactFormUnreveal 0.8s ease both;
+  animation: contactFormUnreveal 0.4s ease both;
 }
 
 @keyframes contactFromReveal {
@@ -40,12 +40,12 @@ body {
 @keyframes contactFormUnreveal {
   0% {
     display: flex;
-    scale: 1;
     opacity: 1;
+    scale: 1;
   }
   100% {
-    opacity: 0;
     scale: 0.5;
+    opacity: 0;
     display: none;
   }
 }

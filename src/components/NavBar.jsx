@@ -4,7 +4,7 @@ import { useState } from "react";
 
 import { FaEnvelope, FaBars, FaBarsStaggered } from "react-icons/fa6";
 
-function NavBar({ showForm }) {
+function NavBar({ showForm, setFirstFormOpen }) {
   const [menuToggled, setMenuToggled] = useState(false);
 
   const {
@@ -43,7 +43,14 @@ function NavBar({ showForm }) {
           </li>
         </ul>
 
-        <button className={contactMe} href="#" onClick={() => showForm(true)}>
+        <button
+          className={contactMe}
+          href="#"
+          onClick={() => {
+            showForm(true);
+            setFirstFormOpen(true);
+          }}
+        >
           <FaEnvelope fontSize={"1.3rem"} />
           <p>Contactame</p>
         </button>
@@ -85,6 +92,7 @@ function NavBar({ showForm }) {
             <a
               onClick={() => {
                 setMenuToggled(false);
+                setFirstFormOpen(true);
                 showForm(true);
               }}
               className={style.mobileContactMe}

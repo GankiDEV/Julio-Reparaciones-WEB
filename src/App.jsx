@@ -16,9 +16,10 @@ import "@/styles/main.css";
 
 function App() {
   const [formVisible, setFormVisible] = useState(false);
+  const [firsFormOpen, setFirstFormOpen] = useState(false);
   return (
     <>
-      <NavBar showForm={setFormVisible} />
+      <NavBar showForm={setFormVisible} setFirstFormOpen={setFirstFormOpen} />
       <Presentation />
       <AboutMe />
       <Experience />
@@ -27,8 +28,9 @@ function App() {
       <Footer />
       <GoToStartFAB url="#inicio" />
 
-      {/* {formVisible && <FormContact setVisible={setFormVisible} />} */}
-      <FormContact setVisible={setFormVisible} isVisible={formVisible} />
+      {firsFormOpen && (
+        <FormContact setVisible={setFormVisible} isVisible={formVisible} />
+      )}
     </>
   );
 }

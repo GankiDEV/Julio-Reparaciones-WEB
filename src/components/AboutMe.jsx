@@ -8,11 +8,9 @@ function AboutMe() {
       <div className={biography}>
         <h2>Un poco sobre mi trabajo.</h2>
         <p>
-          Hola mi nombre es Julio y llevo años el la reparación. Me enorgullece
-          brindar un servicio de alta calidad a mis clientes. He dedicado mi
-          carrera a mantener en funcionamiento una amplia gama de
-          electrodomésticos multimarcas, desde lavadoras y lavavajillas hasta
-          hornos y refrigeradores incluso aries acondicionados.
+          Hola mi nombre es Julio, llevo varios años en el mundillo de la
+          reparación de electrodomesticos. Ofreciendo un servicio de calidad a
+          mis clientes. Mi trabajo consiste en la reparacion de equipos electrodomesticos multimarcas, entre ellos, lavadoras, secadoras, neveras, aires acondicionados, etcetera.
         </p>
         <p>
           Con mi profundo conocimiento técnico y años de experiencia, puedo
