@@ -16,7 +16,7 @@ function PorqueNosotros() {
     <section id="porquenosotros" className={style.container}>
       <div className={style.title}>
         <h2>No encontrarás mejor servicio.</h2>
-        <p>No paramos de mejorar.</p>
+        <p>Mejoramos cada vez más.</p>
       </div>
 
       <div className={style.boxes}>
@@ -37,12 +37,12 @@ function PorqueNosotros() {
 
         <div>
           <img src={img4} alt="bolsa de dinero" />
-          <p>Sin preciones exagerados, todo como se debe</p>
+          <p>Sin precios exagerados, todo como se debe</p>
         </div>
       </div>
 
       <p className={style.text}>
-        No te <span>arrepentiras</span> de trabajar con nosotros,{" "}
+        No te <span>arrepentirás</span> de trabajar con nosotros,{" "}
         <span>carisma</span>, <span>dedicación</span>, <span>compromiso</span> y{" "}
         <span>honestidad</span> es lo que nos caracteriza como trabajadores,
         contáctanos y dejanos entrar en acción.

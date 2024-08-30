@@ -9,7 +9,7 @@ function Presentation() {
         <h1>Reparaciones FIRO</h1>
         <h2>Reparacion y mantenimiento</h2>
         <h2>
-          de <span>electrodomesticos</span> del hogar
+          de <span>electrodomésticos</span> del hogar
         </h2>
       </div>
     </header>

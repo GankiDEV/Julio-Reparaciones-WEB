@@ -97,7 +97,7 @@ function Servicios() {
                 <h3>Nuestro horario</h3>
               </div>
               <div className={horarioText}>
-                <p>¡Abierto las 24 horas y sin coste de desplazamiento!</p>
+                <p>¡Abierto las 24 horas y sin coste por desplazamiento!</p>
               </div>
             </div>
           </div>
