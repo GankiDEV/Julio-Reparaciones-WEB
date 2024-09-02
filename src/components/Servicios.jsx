@@ -66,7 +66,7 @@ function Servicios() {
                   </li>
                   <li>
                     <FaCheckCircle color="#4e8" fontSize={"1.2rem"} s />
-                    <p>Cafeteras, Batioras etc...</p>
+                    <p>Cafeteras, Batidoras etc...</p>
                   </li>
                 </ul>
                 <p>

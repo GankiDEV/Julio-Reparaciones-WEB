@@ -19,90 +19,88 @@ function NavBar({ showForm, setFirstFormOpen }) {
   } = style;
 
   return (
-    <>
-      <nav className={container}>
-        <div className={profile}>
-          <img className={image} src={img1} alt="mi foto" />
-          <div className={textContainer}>
-            <p className={textTitle}>Reparaciones FIRO</p>
-          </div>
+    <nav className={container}>
+      <div className={profile}>
+        <img className={image} src={img1} alt="mi foto" />
+        <div className={textContainer}>
+          <p className={textTitle}>Reparaciones FIRO</p>
         </div>
+      </div>
 
-        <ul className={menu}>
-          <li>
-            <a href="#sobremi">Sobre Mi</a>
-          </li>
-          <li>
-            <a href="#experiencia">Experiencia</a>
-          </li>
-          <li>
-            <a href="#servicios">Servicios</a>
-          </li>
-          <li>
-            <a href="#porquenosotros">Porque Nosotros</a>
-          </li>
-        </ul>
+      <ul className={menu}>
+        <li>
+          <a href="#sobremi">Sobre Mi</a>
+        </li>
+        <li>
+          <a href="#experiencia">Experiencia</a>
+        </li>
+        <li>
+          <a href="#servicios">Servicios</a>
+        </li>
+        <li>
+          <a href="#porquenosotros">Porque Nosotros</a>
+        </li>
+      </ul>
 
-        <button
-          className={contactMe}
-          href="#"
-          onClick={() => {
-            showForm(true);
-            setFirstFormOpen(true);
-          }}
-        >
-          <FaEnvelope fontSize={"1.3rem"} />
-          <p>Contactame</p>
-        </button>
+      <button
+        className={contactMe}
+        href="#"
+        onClick={() => {
+          showForm(true);
+          setFirstFormOpen(true);
+        }}
+      >
+        <FaEnvelope fontSize={"1.3rem"} />
+        <p>Contactame</p>
+      </button>
 
-        <button
-          className={style.menuToggle}
-          onClick={() => setMenuToggled(!menuToggled)}
-        >
-          {!menuToggled ? <FaBars /> : <FaBarsStaggered />}
-        </button>
+      <button
+        className={style.menuToggle}
+        onClick={() => setMenuToggled(!menuToggled)}
+      >
+        {!menuToggled ? <FaBars /> : <FaBarsStaggered />}
+      </button>
 
-        <div
-          onClick={() => setMenuToggled(false)}
-          className={`${style.mobileMenu} ${
-            menuToggled ? style.mobileMenuActive : style.mobileMenuInactive
-          }`}
-        >
-          <ul onClick={() => setMenuToggled(false)}>
-            <li>
-              <a href="#sobremi" onClick={() => setMenuToggled(false)}>
-                Sobre Mi
-              </a>
-            </li>
-            <li>
-              <a href="#experiencia" onClick={() => setMenuToggled(false)}>
-                Experiencia
-              </a>
-            </li>
-            <li>
-              <a href="#servicios" onClick={() => setMenuToggled(false)}>
-                Servicios
-              </a>
-            </li>
-            <li>
-              <a href="#porquenosotros" onClick={() => setMenuToggled(false)}>
-                Porque Nosotros
-              </a>
-            </li>
-            <a
-              onClick={() => {
-                setMenuToggled(false);
-                setFirstFormOpen(true);
-                showForm(true);
-              }}
-              className={style.mobileContactMe}
-            >
-              Contactame
+      <div
+        onClick={() => setMenuToggled(false)}
+        className={`${style.mobileMenu} ${
+          menuToggled ? style.mobileMenuActive : style.mobileMenuInactive
+        }`}
+      >
+        <ul onClick={() => setMenuToggled(false)}>
+          <li>
+            <a href="#sobremi" onClick={() => setMenuToggled(false)}>
+              Sobre Mi
             </a>
-          </ul>
-        </div>
-      </nav>
-    </>
+          </li>
+          <li>
+            <a href="#experiencia" onClick={() => setMenuToggled(false)}>
+              Experiencia
+            </a>
+          </li>
+          <li>
+            <a href="#servicios" onClick={() => setMenuToggled(false)}>
+              Servicios
+            </a>
+          </li>
+          <li>
+            <a href="#porquenosotros" onClick={() => setMenuToggled(false)}>
+              Porque Nosotros
+            </a>
+          </li>
+          <a
+            onClick={() => {
+              setMenuToggled(false);
+              setFirstFormOpen(true);
+              showForm(true);
+            }}
+            className={style.mobileContactMe}
+          >
+            Contactame
+          </a>
+        </ul>
+      </div>
+    </nav>
   );
 }
 

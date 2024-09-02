@@ -1,16 +1,16 @@
 import style from "@/styles/Presentation.module.css";
-
-const { container, containerImage, textInfo, imageParent } = style;
+import { FaArrowTurnDown } from "react-icons/fa6";
 
 function Presentation() {
   return (
-    <header className={container} id="inicio">
-      <div className={textInfo}>
-        <h1>Reparaciones FIRO</h1>
-        <h2>Reparacion y mantenimiento</h2>
-        <h2>
-          de <span>electrodomésticos</span> del hogar
-        </h2>
+    <header className={style.container} id="inicio">
+      <div className={style.textContainer}>
+        <h1>Servicio de reparación de electrodomésticos</h1>
+        <h2>Todo tipo de equipos multimarca</h2>
+        <h2>Mallorca - España</h2>
+      </div>
+      <div className={style.iconDown}>
+        <FaArrowTurnDown />
       </div>
     </header>
   );

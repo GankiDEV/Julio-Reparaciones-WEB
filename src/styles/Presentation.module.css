@@ -1,72 +1,58 @@
-:root {
-  font-size: 16px;
-}
-
 .container {
   height: 100vh;
   display: flex;
   align-items: center;
   box-sizing: border-box;
   width: 100%;
-  background-color: #000c;
-  justify-content: start;
+  background-color: #000000d3;
+  justify-content: center;
   padding: 0 80px;
   overflow: hidden;
+  position: relative;
 }
 
-.textInfo {
+.iconDown {
+  position: absolute;
+  display: grid;
+  place-items: center;
+  bottom: 12px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
   color: #fff;
-  font-family: "Montserrat Regular", Arial, Helvetica, sans-serif;
   font-size: 1.5rem;
-  border-left: 5px solid #f3c138;
-  padding: 10px 20px;
-  box-sizing: border-box;
+  animation: iconFlotating 1s ease infinite alternate both;
 }
 
-.textInfo h1 {
-  font-family: "OpenSans Regular", Arial, Helvetica, sans-serif;
-  color: #f3c138;
+.textContainer {
+  color: #eee;
+  margin-top: 50px;
+}
+
+.textContainer h1 {
+  font-family: "Montserrat Regular";
   font-size: 2.8rem;
+  text-align: center;
 }
 
-.textInfo h2 {
-  font-size: 3rem;
+.textContainer h2:nth-child(2) {
+  font-family: "Montserrat Regular";
+  font-size: 2.3rem;
+  text-align: center;
 }
 
-.textInfo :last-child {
-  font-size: 2.8rem;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.textInfo h2 span {
+.textContainer :last-child {
+  font-family: "Montserrat Regular";
+  font-size: 1.6rem;
+  text-align: center;
   color: #f3c138;
 }
 
-@media only screen and (max-width: 600px) {
-  .container {
-    height: 100vhpx;
-    width: 100%;
-    padding: 0;
-    justify-content: center;
+@keyframes iconFlotating {
+  0% {
+    transform: translateY(-40px);
   }
-
-  .textInfo {
-    width: fit-content;
-    text-align: center;
-    border: none;
-  }
-
-  .textInfo h1 {
-    margin-bottom: 30px;
-    font-size: 1.6rem;
-  }
-
-  .textInfo h2 {
-    font-size: 1.6rem;
-  }
-
-  .textInfo :nth-child(3),
-  .textInfo :nth-child(3) span {
-    font-size: 1.6rem;
+  100% {
+    transform: translateY(0);
   }
 }
