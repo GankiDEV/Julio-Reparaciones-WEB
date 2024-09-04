@@ -9,9 +9,9 @@ function Presentation() {
         <h2>Todo tipo de equipos multimarca</h2>
         <h2>Mallorca - España</h2>
       </div>
-      <div className={style.iconDown}>
-        <FaArrowTurnDown />
-      </div>
+      <a href="#servicios" className={style.irServicios}>
+        Ver servicios
+      </a>
     </header>
   );
 }

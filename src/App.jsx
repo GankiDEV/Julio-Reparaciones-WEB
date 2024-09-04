@@ -26,7 +26,6 @@ function App() {
       <Servicios />
       <PorqueNosotros />
       <Footer />
-      <GoToStartFAB url="#inicio" />
 
       {firsFormOpen && (
         <FormContact setVisible={setFormVisible} isVisible={formVisible} />

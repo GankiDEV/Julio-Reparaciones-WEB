@@ -15,11 +15,11 @@
   align-items: center;
   justify-content: space-between;
   background-color: #0000009c;
-  backdrop-filter: blur(15px);
+  backdrop-filter: blur(55px);
   padding: 0 110px;
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0 0 40px #0006;
-  border-bottom: 1px solid #868686;
+  border-bottom: 1px solid #6b6b6b;
   z-index: 99;
 }
 
@@ -31,14 +31,14 @@
 .profile {
   display: flex;
   align-items: center;
-  font-weight: bold;
+
   color: #fff;
   column-gap: 10px;
 }
 
 .textTitle {
-  font-size: 1.3rem;
-  font-family: "Montserrat Regular", Arial, Helvetica, sans-serif;
+  font-size: 1.1rem;
+  font-family: "HeadlandOne Regular", Arial, Helvetica, sans-serif;
 }
 
 .menu {
@@ -64,26 +64,26 @@
 
 .contactMe {
   box-sizing: border-box;
-  padding: 8px 15px;
+  padding: 9px 17px;
   color: #fff;
   text-decoration: none;
-  background-color: #3387e6;
-  color: #ffffff;
-  border-radius: 7px;
+  background-color: #d3d8dd;
+  color: #0f0f0f;
+  border: none;
   transition: all 0.2s ease;
-  border-bottom: 5px solid #1d4675;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
   column-gap: 10px;
+  outline: none;
+  border-radius: 5px;
 }
 
-.contactMe p {
-  font-family: sans-serif;
-}
 .contactMe:hover {
-  background-color: #2d62a0;
-  color: #ddd;
+  background-color: #aaaaaa;
+  color: #0f0f0f;
   cursor: pointer;
 }
 
@@ -160,7 +160,7 @@
 
 @media only screen and (max-width: 600px) {
   .container {
-    padding: 20px 20px;
+    padding: 10px 20px;
   }
 
   .menu,

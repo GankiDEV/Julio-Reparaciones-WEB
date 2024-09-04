@@ -1,6 +1,7 @@
 .container {
   height: 100vh;
   display: flex;
+  flex-direction: column;
   align-items: center;
   box-sizing: border-box;
   width: 100%;
@@ -56,7 +57,30 @@
   }
 }
 
+.irServicios {
+  background-color: #d6a92d;
+  color: #fff;
+  font-family: "Montserrat Regular";
+  text-decoration: none;
+  display: inline-block;
+  padding: 10px 17px;
+  margin-top: 20px;
+  border-radius: 10px;
+
+  &:hover {
+    background-color: #9e8131;
+  }
+
+  &:active {
+    background-color: #bd9835;
+  }
+}
+
 @media only screen and (max-width: 600px) {
+  .container {
+    height: 100vh;
+  }
+
   .textContainer h1,
   .textContainer h2:nth-child(2),
   .textContainer :last-child {
@@ -80,5 +104,13 @@
 
   .textContainer :last-child {
     font-size: 1.3rem;
+  }
+
+  .iconDown {
+    display: none;
+  }
+
+  .irServicios {
+    display: none;
   }
 }
