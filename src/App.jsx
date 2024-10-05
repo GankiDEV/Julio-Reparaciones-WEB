@@ -7,16 +7,14 @@ import Experience from "./components/Exprience";
 import Servicios from "./components/Servicios";
 import PorqueNosotros from "./components/PorqueNosotros";
 import Footer from "./components/Footer";
-import GoToStartFAB from "./components/special/GoToStartFAB";
 import FormContact from "./components/special/FormContact";
 import "@/styles/main.css";
-
-//gAltATlqM7SF4Xmq4
-// LcIB5Oq-G78MQCk1DGK4Q
 
 function App() {
   const [formVisible, setFormVisible] = useState(false);
   const [firsFormOpen, setFirstFormOpen] = useState(false);
+
+  window.console.log("xd");
   return (
     <>
       <NavBar showForm={setFormVisible} setFirstFormOpen={setFirstFormOpen} />

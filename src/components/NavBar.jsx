@@ -1,4 +1,4 @@
-import img1 from "@/assets/profilePicture.jpg";
+import img1 from "@/assets/icons/logo.png";
 import style from "@/styles/NavBar.module.css";
 import { useState } from "react";
 
